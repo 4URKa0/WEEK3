@@ -40,7 +40,7 @@ const sendAllGames = async (req, res) => {
   res.send(req.games);
 };
 
-const deleteGame = async (req, res) => {
+const senddeleteGame = async (req, res) => {
   
   // Прочитаем запрашиваемый id игры из запроса
     const id = Number(req.params.id);
@@ -66,6 +66,6 @@ const deleteGame = async (req, res) => {
 
 module.exports = {
     sendAllGames,
-    deleteGame,
+    senddeleteGame,
     addGameController
 }
